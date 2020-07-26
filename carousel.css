@@ -4,9 +4,10 @@
 
 body {
   padding-top: 3rem;
-  padding-bottom: 3rem;
   color: #5a5a5a;
 }
+
+/* Navbar */ 
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -22,11 +23,19 @@ body {
   z-index: 10;
 }
 
-
-
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
+}
+
+.carousel-item:after {
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.5);
 }
 .carousel-item > img {
   position: absolute;
@@ -37,21 +46,10 @@ body {
   object-fit: cover;
 }
 
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: 400;
-}
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+a.btn {
+  background-color: #706677;
+  border: none;
+  outline: none;
 }
 
 
@@ -62,11 +60,26 @@ body {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
+.featurette-divider:last-child {
+  margin-bottom: 3rem;
+}
+
 /* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
+}
+
+.featurette img {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* FOOTER */
+footer i {
+  margin-left: 1em;
+  color: #5a5a5a;
+  font-size: 1.2em;
 }
 
 
