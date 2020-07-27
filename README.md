@@ -1,6 +1,6 @@
 # Coffee Shop Restaurant Page
 
-See the live [here](azriellep.github.io/the-little-den).
+See the live [here](https://azriellep.github.io/the-little-den/).
 
 ### What I Used To Build This Page
 
