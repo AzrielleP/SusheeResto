@@ -7,8 +7,7 @@ body {
   color: #5a5a5a;
 }
 
-/* Navbar */ 
-
+/* Navbar */
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -29,13 +28,13 @@ body {
 }
 
 .carousel-item:after {
-  content:"";
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background:rgba(0,0,0,0.5);
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 .carousel-item > img {
   position: absolute;
@@ -57,14 +56,15 @@ body {
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
-  letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
 }
 
 .featurette img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* FOOTER */
+/* Footer
+------------------------- */
 footer i {
   margin-right: 1em;
   color: #5a5a5a;
@@ -72,7 +72,7 @@ footer i {
 
 /* Extra padding inside col */
 .extra-padding {
-  padding-bottom: 1.5em
+  padding-bottom: 1.5em;
 }
 
 /* RESPONSIVE CSS
