@@ -3,7 +3,7 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top: 3rem;
+  padding: 3rem 0 3rem 0;
   color: #5a5a5a;
 }
 
@@ -46,22 +46,11 @@ body {
   object-fit: cover;
 }
 
-a.btn {
-  background-color: #706677;
-  border: none;
-  outline: none;
-}
-
-
 /* Featurettes
 ------------------------- */
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-}
-
-.featurette-divider:last-child {
-  margin-bottom: 3rem;
 }
 
 /* Thin out the marketing headings */
@@ -77,11 +66,14 @@ a.btn {
 
 /* FOOTER */
 footer i {
-  margin-left: 1em;
+  margin-right: 1em;
   color: #5a5a5a;
-  font-size: 1.2em;
 }
 
+/* Extra padding inside col */
+.extra-padding {
+  padding-bottom: 1.5em
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
