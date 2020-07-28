@@ -1,21 +1,22 @@
 {
   "name": "thelittleden",
   "version": "1.0.0",
-  "description": "A simple sushi restaurant page",
+  "description": "A simple coffee shop page",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AzrielleP/SusheeResto.git"
+    "url": "git+https://github.com/AzrielleP/the-little-den.git"
   },
   "author": "Aze",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AzrielleP/SusheeResto/issues"
+    "url": "https://github.com/AzrielleP/the-little-den/issues"
   },
-  "homepage": "https://github.com/AzrielleP/SusheeResto#readme",
+  "homepage": "https://github.com/AzrielleP/the-little-den#readme",
   "devDependencies": {
     "webpack": "^4.44.0",
     "webpack-cli": "^3.3.12"
