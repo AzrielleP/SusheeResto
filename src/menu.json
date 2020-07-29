@@ -1,0 +1,99 @@
+{
+    "Hot": [
+        {
+            "name": "Black Americano",
+            "description": "Espresso drink stretched with hot water. Our all time best-seller.",
+            "price": 100,
+            "bestSeller" : true
+        },
+        {
+            "name": "Cafe Mocha",
+            "description": "Espresso-based drink with chocolate and warm milk.",
+            "price": 100,
+            "bestSeller" : false
+        },
+        {
+            "name": "French Vanilla",
+            "description": "Smooth and rich vanilla flavor complimenting the light coffee notes.",
+            "price": 100,
+            "bestSeller" : false
+        },
+        {
+            "name": "Hot Cappuccino",
+            "description": "A shot of espresso with steamed milk and milk foam on top.",
+            "price": 95,
+            "bestSeller": true
+        },
+        {
+            "name": "Hot Chocolate",
+            "description": "Rich and smooth hot chocolate drink with milky notes.",
+            "price": 95,
+            "bestSeller" : false
+        },
+        {
+            "name": "Matcha Latte",
+            "description": "Prepared hot beverage combing steamed milk and matcha powder.",
+            "price": 95,
+            "bestSeller" : true
+        }
+
+    ],
+    "Cold": [
+        {
+            "name": "Cold Americano",
+            "description": "Cold twist of our best-seller.",
+            "price": 90,
+            "bestSeller" : false
+        },
+        {
+            "name": "Iced Classic Mocha",
+            "description": "Our best-selling cold beverage, optionally served with whipped cream.",
+            "price": 90,
+            "bestSeller" : true
+        },
+        {
+            "name": "Icy French Vanilla",
+            "description": "French vanilla served with ice.",
+            "price": 100,
+            "bestSeller" : false
+        },
+        {
+            "name": "Cold Chocolate",
+            "description": "The kid's favorite. Served with chocolate bits.",
+            "price": 90,
+            "bestSeller" : false
+        }
+    ],
+    "Desert": [
+        {
+            "name": "Chocolate Cake",
+            "description": "Chocolate cake decorated with dark chocolate flakes.",
+            "price": 120
+        },
+        {
+            "name": "Blueberry Cheesecake",
+            "description": " Rich and smooth cheesecake made with finest of cream cheese flavored with blueberries.",
+            "price": 130
+        },
+        {
+            "name": "Red Velvet",
+            "description": "Moist red velvet cake with whipped cream cheese topping.",
+            "price": 130
+        },
+        {
+            "name": "Classic Donut",
+            "description": "Flavored with pure vanilla extract and a touch of salt.",
+            "price": 90
+        },
+        {
+            "name": "Chocolate Glazed Donut",
+            "description": "Classic donut with a dark chocolate glaze.",
+            "price": 95
+        },
+        {
+            "name": "Honey Glazed Donut",
+            "description": "Classic donut with rich honey glaze.",
+            "price": 95
+        }
+    ]
+}
