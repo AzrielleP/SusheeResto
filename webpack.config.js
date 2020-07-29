@@ -7,7 +7,7 @@ module.exports = {
         contact: './src/js/contact.js'
     },
     output: {
-        path: __dirname + '/dist/js',
+        path: __dirname + '/dist',
         filename: '[name].bundle.js'
     },
     plugins: [
