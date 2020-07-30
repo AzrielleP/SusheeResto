@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- META TAGS -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="The Little Den Coffee Shop serving the best Black Americano in Baguio City" />
- 
+    <meta
+      name="description"
+      content="The Little Den Coffee Shop serving the best Black Americano in Baguio City"
+    />
     <meta name="generator" content="Jekyll v4.0.1" />
+
     <title><%= htmlWebpackPlugin.options.title %></title>
 
+    <!-- Bootstrap -->
     <link
       rel="canonical"
       href="https://getbootstrap.com/docs/4.5/examples/carousel/"
@@ -41,6 +46,16 @@
       }
     </style>
 
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet" />
+
+    <!-- OpenLayers API CSS -->
+    <link
+      rel="stylesheet"
+      href="https://openlayers.org/en/v4.6.5/css/ol.css"
+      type="text/css"
+    />
+
     <!-- Font Awesome Icons-->
     <link
       rel="stylesheet"
@@ -48,17 +63,15 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
-
-    <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet" />
-
   </head>
+
   <body>
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand my-auto" href="index.html">
           <img src="assets/little-den-logo.png" height="50" alt="logo" />
         </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -70,12 +83,11 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html"
-                >Home</a
-              >
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="menu.html">Menu</a>
@@ -84,7 +96,9 @@
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="contact.html">Contact Us <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="contact.html"
+                >Contact Us <span class="sr-only">(current)</span></a
+              >
             </li>
           </ul>
         </div>
@@ -93,7 +107,7 @@
 
     <main>
       <!-- Image
-  ================================================== -->
+    ================================================== -->
       <div class="carousel-inner">
         <div class="bg-img-container">
           <img
@@ -108,35 +122,24 @@
         </div>
       </div>
 
-      <hr class="featurette-divider" />
-
-      <!-- Contact
-================================================== -->
-      <div class="container">
-        <div class="row featurette">
- 
-          <div class="col-md-6" id = "map"> </div>
-     
-        <div class="col-md-6">
-          </div>
-        </div>
-
+      <!-- Contact Section
+    ================================================== -->
+      <div class="container marketing">
         <hr class="featurette-divider" />
 
         <div class="row featurette">
-          
-          <div class="col-md-12" id = "map">
-          </div>
+          <div class="col-md-6" id="map"></div>
+
+          <div class="col-md-6"></div>
         </div>
 
         <hr class="featurette-divider" />
-
       </div>
 
-      <!-- FOOTER -->
+      <!-- Footer
+    ================================================== -->
       <footer class="container">
         <div class="row">
-
           <div class="col-md-3">
             <div class="extra-padding">
               <p class="h5">Contact Us</p>
@@ -160,8 +163,12 @@
           <div class="col-md-3">
             <div class="extra-padding">
               <p class="h5">Follow Us</p>
-              <a href = '#' class = "btn-floating btn-tw" role="button"><i class="fa fa-twitter"></i></a>
-              <a href = '#' class = "btn-floating btn-fb"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="btn-floating btn-tw" role="button"
+                ><i class="fa fa-twitter"></i
+              ></a>
+              <a href="#" class="btn-floating btn-fb"
+                ><i class="fa fa-facebook"></i
+              ></a>
             </div>
           </div>
 
@@ -185,6 +192,7 @@
       </footer>
     </main>
 
+    <!-- Bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -206,6 +214,11 @@
           '<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>'
         );
     </script>
-       <script src="https://openlayers.org/en/v4.6.5/build/ol.js" type="text/javascript"></script>
+
+    <!-- OpenLayers API -->
+    <script
+      src="https://openlayers.org/en/v4.6.5/build/ol.js"
+      type="text/javascript"
+    ></script>
   </body>
 </html>

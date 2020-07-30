@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <!-- META TAGS  -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -10,10 +12,11 @@
       name="description"
       content="The Little Den Coffee Shop serving the best Black Americano in Baguio City"
     />
-
     <meta name="generator" content="Jekyll v4.0.1" />
+
     <title><%= htmlWebpackPlugin.options.title %></title>
 
+    <!-- Bootstrap -->
     <link
       rel="canonical"
       href="https://getbootstrap.com/docs/4.5/examples/carousel/"
@@ -44,27 +47,26 @@
       }
     </style>
 
-    <!-- Font Awesome Icons-->
-    <link
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet" />
+
+     <!-- Font Awesome Icons-->
+      <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
-    />
-
-    <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet" />
+      />
   </head>
+
   <body>
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
         <a class="navbar-brand my-auto" href="index.html">
-          <img
-            src="assets/little-den-logo.png"
-            height="50"
-            alt="logo"
-          />
+          <img src="assets/little-den-logo.png" height="50" alt="logo" />
         </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -76,30 +78,32 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="menu.html"
-                >Menu <span class="sr-only">(current)</span></a
-              >
-            </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html"
+                >About <span class="sr-only">(current)</span></a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
           </ul>
         </div>
+
       </nav>
     </header>
 
     <main>
       <!-- Image
-  ================================================== -->
+    ================================================== -->
       <div class="carousel-inner">
         <div class="bg-img-container">
           <img
@@ -114,11 +118,12 @@
         </div>
       </div>
 
-      <hr class="featurette-divider" />
-
       <!-- Menu Selection
-  ================================================== -->
-      <div class="container">
+    ================================================== -->
+      <div class="container marketing">
+
+        <hr class="featurette-divider" />
+
         <nav class="section-menu">
           <ul class="menu-nav">
             <li>
@@ -137,9 +142,13 @@
 
       <hr class="featurette-divider" />
 
-      <!-- FOOTER -->
+    </div>
+      <!-- Footer
+    ================================================== -->
       <footer class="container">
+
         <div class="row">
+
           <div class="col-md-3">
             <div class="extra-padding">
               <p class="h5">Contact Us</p>
@@ -188,9 +197,12 @@
               </p>
             </div>
           </div>
+
         </div>
       </footer>
     </main>
+
+    <!-- Bootstrap -->
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -213,5 +225,6 @@
           '<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>'
         );
     </script>
+    
   </body>
 </html>

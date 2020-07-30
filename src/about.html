@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <!-- META TAGS  -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -10,10 +12,11 @@
       name="description"
       content="The Little Den Coffee Shop serving the best Black Americano in Baguio City"
     />
-
     <meta name="generator" content="Jekyll v4.0.1" />
+
     <title><%= htmlWebpackPlugin.options.title %></title>
 
+    <!-- Bootstrap -->
     <link
       rel="canonical"
       href="https://getbootstrap.com/docs/4.5/examples/carousel/"
@@ -44,33 +47,26 @@
       }
     </style>
 
-    <!-- Font Awesome Icons-->
-    <link
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet" />
+
+     <!-- Font Awesome Icons-->
+      <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
-    />
-
-    <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet" />
-
-    <!-- OpenLayers API for Map -->
-    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
-      
+      />
   </head>
 
   <body>
-
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
         <a class="navbar-brand my-auto" href="index.html">
-          <img
-            src="assets/little-den-logo.png"
-            height="50"
-            alt="logo"
-          />
+          <img src="assets/little-den-logo.png" height="50" alt="logo" />
         </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -82,6 +78,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
@@ -100,12 +97,13 @@
             </li>
           </ul>
         </div>
+
       </nav>
     </header>
 
     <main>
       <!-- Image
-  ================================================== -->
+    ================================================== -->
       <div class="carousel-inner">
         <div class="bg-img-container">
           <img
@@ -120,21 +118,29 @@
         </div>
       </div>
 
-      <hr class="featurette-divider" />
-
       <!-- About Section
-================================================== -->
-      <div class="container">
+    ================================================== -->
+      <div class="container marketing">
+        
+        <hr class="featurette-divider" />
+
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">
               Our Story
             </h2>
             <p class="lead">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis quia in, sint similique possimus facilis optio delectus voluptatibus temporibus at nobis beatae, itaque facere quod saepe. Libero nisi ut voluptatem?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perferendis quia in, sint similique possimus facilis optio
+              delectus voluptatibus temporibus at nobis beatae, itaque facere
+              quod saepe. Libero nisi ut voluptatem?
             </p>
-              <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam tempore temporibus ullam voluptate quo quaerat maxime praesentium necessitatibus nesciunt veniam, illum consequatur quae consequuntur, omnis cumque! Reiciendis, iusto. Tempora, exercitationem!
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
+              tempore temporibus ullam voluptate quo quaerat maxime praesentium
+              necessitatibus nesciunt veniam, illum consequatur quae
+              consequuntur, omnis cumque! Reiciendis, iusto. Tempora,
+              exercitationem!
             </p>
           </div>
           <div class="col-md-5">
@@ -146,11 +152,15 @@
           </div>
         </div>
 
-      <hr class="featurette-divider" />
+        <hr class="featurette-divider" />
+      </div>
 
-      <!-- FOOTER -->
+      <!-- Footer
+    ================================================== -->
       <footer class="container">
+
         <div class="row">
+
           <div class="col-md-3">
             <div class="extra-padding">
               <p class="h5">Contact Us</p>
@@ -199,9 +209,12 @@
               </p>
             </div>
           </div>
+
         </div>
       </footer>
     </main>
+
+    <!-- Bootstrap -->
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -224,5 +237,6 @@
           '<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>'
         );
     </script>
+
   </body>
 </html>
