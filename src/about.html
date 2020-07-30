@@ -54,8 +54,14 @@
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet" />
+
+    <!-- OpenLayers API for Map -->
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+      
   </head>
+
   <body>
+
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand my-auto" href="index.html">
@@ -142,27 +148,8 @@
         <hr class="featurette-divider" />
 
         <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">
-              Our Location
-            </h2>
-            <p class="lead">
-              We believe that only the best beans make the best coffee. Our
-              best-selling black americano is an all time favorite from our most
-              loyal customers.
-            </p>
-            <p>
-              Our other best sellers: 
-              <br>
-              Matcha Latte, Hot Cappuccino, and
-              Iced Classic Mocha.
-            </p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <img
-              src="assets/featurette2.jpg"
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt = "Pouring coffee to cup"
-            />
+          
+          <div class="col-md-12" id = "map">
           </div>
         </div>
       <hr class="featurette-divider" />
@@ -243,5 +230,7 @@
           '<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>'
         );
     </script>
+    <script src="https://openlayers.org/en/v4.6.5/build/ol.js" type="text/javascript"></script>
+     
   </body>
 </html>

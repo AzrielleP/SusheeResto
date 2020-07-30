@@ -137,6 +137,12 @@ body {
   padding: 0;
 }
 
+/* Making the map visible in About Page
+------------------------- */
+#map {
+  height: 25rem;
+}
+
 /* Footer
 ------------------------- */
 footer i {
