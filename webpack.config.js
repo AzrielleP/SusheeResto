@@ -27,13 +27,13 @@ module.exports = {
             title: 'About - The Little Den Coffee Shop',
             template: 'src/about.html',
             filename: 'about.html',
-            chunks: ['location']
+            chunks: ['']
         }),
         new HtmlWebpackPlugin({
             title: 'Contact Us - The Little Den Coffee Shop',
             template: 'src/contact.html',
             filename: 'contact.html',
-            chunks: ['contact']
+            chunks: ['location', 'contact']
         }),
     ],   
 };
