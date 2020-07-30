@@ -141,6 +141,8 @@ body {
 ------------------------- */
 #map {
   height: 25rem;
+  margin: 2rem 0 5rem 0;
+  padding-right: 3rem;
 }
 
 /* Footer
