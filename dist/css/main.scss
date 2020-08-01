@@ -1,14 +1,28 @@
+$dark-color: #252422;
+$lighter-dark: #403D39;
+$orange: #EB5E28;
+$lighter-white: #FFFCF2;
+$darker-white: #CCC5B9;
 /* TYPOGRAPHY
 -------------------------------------------------- */
 $font-family-base: "Montserrat", sans-serif;
-$link-color: #EB5E28;
-$link-hover-color: #403D39;
+$link-color: orange;
+$link-hover-color: $lighter-dark;
 $link-hover-decoration: none;
 
 $headings-font-family: "Merriweather", serif;
 $headings-font-weight: 700;
 $headings-margin-bottom: 2rem;
+$headings-color: $dark-color;
 $h1-font-size: 2.6rem;
+
+.light-text {
+  color: $lighter-white;
+}
+
+.orange-text {
+  color: $orange;
+}
 
 /* BUTTONS
 -------------------------------------------------- */
@@ -95,6 +109,8 @@ $border-width: 0;
   
   .featurette-divider {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+    background-color: #CCC5B9;
+    height: 0.1px;
   }
   
   /* Thin out the marketing headings */
@@ -107,6 +123,41 @@ $border-width: 0;
   .featurette img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+
+/* Making the map visible in About Page
+------------------------- */
+#map {
+  height: 25rem;
+  margin: 2rem 0 5rem 0;
+  padding-right: 3rem;
+}
+
+/* Footer
+------------------------- */
+footer {
+  background-color: $dark-color;
+  padding-top: 4rem;
+  i {
+    margin-right: 1rem;
+    color: $lighter-white;
+  }
+  p {
+    color: $lighter-white;
+  }
+  .fa-twitter, 
+  .fa-facebook {
+    font-size: 2em;
+  }
+  .fa-twitter:hover, 
+  .fa-facebook:hover {
+    color: $orange;
+  }
+}
+
+/* Extra padding inside col */
+.extra-padding {
+  padding-bottom: 1.5em;
+}
 
 /* IMPORTS
 -------------------------------------------------- */
