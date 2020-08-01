@@ -1,17 +1,17 @@
 $dark-color: #252422;
-$lighter-dark: #403D39;
-$orange: #EB5E28;
-$lighter-white: #FFFCF2;
-$darker-white: #CCC5B9;
+$lighter-dark: #403d39;
+$orange: #eb5e28;
+$lighter-white: #fffcf2;
+$darker-white: #ccc5b9;
 
 /* TYPOGRAPHY
 -------------------------------------------------- */
-$font-family-base: "Montserrat", sans-serif;
+$font-family-base: 'Montserrat', sans-serif;
 $link-color: orange;
 $link-hover-color: $lighter-dark;
 $link-hover-decoration: none;
 
-$headings-font-family: "Merriweather", serif;
+$headings-font-family: 'Merriweather', serif;
 $headings-font-weight: 700;
 $headings-margin-bottom: 1rem;
 $headings-color: $dark-color;
@@ -27,8 +27,8 @@ $h1-font-size: 2.6rem;
 
 /* BUTTONS
 -------------------------------------------------- */
-$theme-colors:(
-  primary: #EB5E28,
+$theme-colors: (
+  primary: #eb5e28,
 );
 
 $btn-font-weight: 500;
@@ -46,7 +46,7 @@ $navbar-dark-color: $dark-color;
 $navbar-dark-hover-color: $orange;
 
 .navbar {
-  font: bolder 1.2rem "Merriweather", serif !important;
+  font: bolder 1.2rem 'Merriweather', serif !important;
 }
 
 .nav-link:hover {
@@ -58,123 +58,123 @@ $navbar-dark-hover-color: $orange;
 
 /* Carousel base class */
 .carousel {
-    margin-bottom: 4rem;
-  }
-  /* Since positioning the image, we need to help out the caption */
-  .carousel-caption {
-    bottom: 5rem !important;
-    z-index: 10;
-  }
-  
-  /* Declare heights because of positioning of img element */
-  .carousel-item {
-    height: 100vh;
-  }
-  
-  .carousel-item:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.5);
-  }
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 5rem !important;
+  z-index: 10;
+}
 
-  .carousel-item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 100vh;
-    object-fit: cover;
-  }
-  
-  .carousel-fade .carousel-item {
-    opacity: 0;
-    transition-duration: .7s;
-    transition-property: opacity;
-   }
-   
-   .carousel-fade  .carousel-item.active,
-   .carousel-fade  .carousel-item-next.carousel-item-left,
-   .carousel-fade  .carousel-item-prev.carousel-item-right {
-     opacity: 1;
-   }
-   
-   .carousel-fade .active.carousel-item-left,
-   .carousel-fade  .active.carousel-item-right {
-    opacity: 0;
-   }
-   
-   .carousel-fade  .carousel-item-next,
-   .carousel-fade .carousel-item-prev,
-   .carousel-fade .carousel-item.active,
-   .carousel-fade .active.carousel-item-left,
-   .carousel-fade  .active.carousel-item-prev {
-    transform: translateX(0);
-    transform: translate3d(0, 0, 0);
-   }
-  
-  /* FEATURETTES
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-item:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-duration: 0.7s;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* FEATURETTES
   ------------------------- */
-  
-  .featurette-divider {
-    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-    background-color: #CCC5B9;
-    height: 0.1px;
-  }
 
-  // Divider for images
-  .img-separator {
-    margin: 2rem;
-    background-color: #CCC5B9;
-    height: 0.1px;
-  }
-  
-  /* Thin out the marketing headings */
-  .featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -0.05rem;
-  }
-  
-  .featurette img {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  background-color: #ccc5b9;
+  height: 0.1px;
+}
 
-  /* JUMBOTRON
+// Divider for images
+.img-separator {
+  margin: 2rem;
+  background-color: #ccc5b9;
+  height: 0.1px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+
+.featurette img {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* JUMBOTRON
   ------------------------- */
-  
-  .jumbotron {
-    position: relative;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: cover
-  }
 
-  // For Menu page
-  .menu-jumbotron {
-    background-image: url("../assets/slide-3-large.jpg"); 
-  }
+.jumbotron {
+  position: relative;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: cover;
+}
 
-  // For About page
-  .about-jumbotron {
-    background-image: url("../assets/nafinia-putra-Kwdp-0pok-I-unsplash\ \(1\).jpg");
-  }
+// For Menu page
+.menu-jumbotron {
+  background-image: url('../assets/jumbotron-photos/jumbotron-menu-medium.jpg');
+}
 
-  //For Contact Page
-  .contact-jumbotron {
-    background-image: url("../assets/glenn-carstens-peters-npxXWgQ33ZQ-unsplash\ \(1\).jpg")
-  }
+// For About page
+.about-jumbotron {
+  background-image: url('../assets/jumbotron-photos/jumbotron-about-medium.jpg');
+}
 
-  .jumbotron-container {
-    position: relative;
-    height: 40vh;
-    color: $lighter-white;
-    .caption { 
-      position: absolute;
+//For Contact Page
+.contact-jumbotron {
+  background-image: url('../assets/jumbotron-photos/jumbotron-contact-medium.jpg');
+}
+
+.jumbotron-container {
+  position: relative;
+  height: 40vh;
+  color: $lighter-white;
+  .caption {
+    position: absolute;
     left: 50% !important;
     top: 60% !important;
     text-align: center;
@@ -182,23 +182,21 @@ $navbar-dark-hover-color: $orange;
     transform: translate(-50%, -50%);
     width: fit-content;
     color: $lighter-white;
-    }
   }
+}
 
-   
-  .jumbotron > .overlay{
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: inherit;
-    background: rgba(0, 0, 0, 0.5);
-  }
+.jumbotron > .overlay {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: inherit;
+  background: rgba(0, 0, 0, 0.5);
+}
 
-
-  /* Style for menu items
+/* Style for menu items
 ------------------------- */
 .menu-nav {
   display: block;
@@ -206,7 +204,7 @@ $navbar-dark-hover-color: $orange;
 }
 
 .btn-menu {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   margin: 0 1rem;
   input {
@@ -244,11 +242,11 @@ footer {
   p {
     color: $lighter-white;
   }
-  .fa-twitter, 
+  .fa-twitter,
   .fa-facebook-square {
     font-size: 2em;
   }
-  .fa-twitter:hover, 
+  .fa-twitter:hover,
   .fa-facebook:hover {
     color: $orange;
   }
@@ -263,22 +261,21 @@ footer {
 -------------------------------------------------- */
 
 // Required form Bootstrap
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins";
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
 
 // Optional
-@import "../../node_modules/bootstrap/scss/buttons";
-@import "../../node_modules/bootstrap/scss/button-group";
-@import "../../node_modules/bootstrap/scss/carousel";
-@import "../../node_modules/bootstrap/scss/forms";
-@import "../../node_modules/bootstrap/scss/grid";
-@import "../../node_modules/bootstrap/scss/images";
-@import "../../node_modules/bootstrap/scss/jumbotron";
-@import "../../node_modules/bootstrap/scss/nav";
-@import "../../node_modules/bootstrap/scss/navbar";
-@import "../../node_modules/bootstrap/scss/reboot";
-@import "../../node_modules/bootstrap/scss/transitions";
-@import "../../node_modules/bootstrap/scss/type";
-@import "../../node_modules/bootstrap/scss/utilities";
-
+@import '../../node_modules/bootstrap/scss/buttons';
+@import '../../node_modules/bootstrap/scss/button-group';
+@import '../../node_modules/bootstrap/scss/carousel';
+@import '../../node_modules/bootstrap/scss/forms';
+@import '../../node_modules/bootstrap/scss/grid';
+@import '../../node_modules/bootstrap/scss/images';
+@import '../../node_modules/bootstrap/scss/jumbotron';
+@import '../../node_modules/bootstrap/scss/nav';
+@import '../../node_modules/bootstrap/scss/navbar';
+@import '../../node_modules/bootstrap/scss/reboot';
+@import '../../node_modules/bootstrap/scss/transitions';
+@import '../../node_modules/bootstrap/scss/type';
+@import '../../node_modules/bootstrap/scss/utilities';
