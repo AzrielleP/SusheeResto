@@ -66,6 +66,12 @@ $navbar-dark-hover-color: $orange;
   z-index: 10;
 }
 
+.carousel-indicators {
+  .active {
+    opacity: 0.85 !important;
+  }
+}
+
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 100vh;
