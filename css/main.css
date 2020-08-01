@@ -168,7 +168,10 @@
 ------------------------- */
 .menu-nav {
   display: block;
-  margin: auto;
+  margin: 1rem 0;
+}
+.menu-nav .active {
+  border-bottom: 2px solid #eb5e28;
 }
 
 .btn-menu {
@@ -176,13 +179,8 @@
   text-transform: uppercase;
   margin: 0 1rem;
 }
-.btn-menu input {
-  display: none;
-}
 
-.btn-menu:focus,
-.btn-menu:active {
-  border-bottom: 2px solid #eb5e28;
+.btn-menu:hover {
   color: #eb5e28;
 }
 
