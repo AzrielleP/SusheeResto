@@ -1,0 +1,132 @@
+/* TYPOGRAPHY
+-------------------------------------------------- */
+$font-family-base: "Montserrat", sans-serif;
+$link-color: #EB5E28;
+$link-hover-color: #403D39;
+$link-hover-decoration: none;
+
+$headings-font-family: "Merriweather", serif;
+$headings-font-weight: 700;
+$headings-margin-bottom: 2rem;
+$h1-font-size: 2.8rem;
+
+/* BUTTONS
+-------------------------------------------------- */
+$theme-colors:(
+  primary: #EB5E28,
+);
+
+$btn-font-weight: 500;
+
+.btn-lg {
+  padding: 0.8rem 1rem !important;
+  margin: 1rem 0;
+}
+
+/* NAVBAR
+-------------------------------------------------- */
+$border-width: 0;
+
+
+/* CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 7rem !important;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 100vh;
+  }
+  
+  .carousel-item:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  .carousel-fade .carousel-item {
+    opacity: 0;
+    transition-duration: .7s;
+    transition-property: opacity;
+   }
+   
+   .carousel-fade  .carousel-item.active,
+   .carousel-fade  .carousel-item-next.carousel-item-left,
+   .carousel-fade  .carousel-item-prev.carousel-item-right {
+     opacity: 1;
+   }
+   
+   .carousel-fade .active.carousel-item-left,
+   .carousel-fade  .active.carousel-item-right {
+    opacity: 0;
+   }
+   
+   .carousel-fade  .carousel-item-next,
+   .carousel-fade .carousel-item-prev,
+   .carousel-fade .carousel-item.active,
+   .carousel-fade .active.carousel-item-left,
+   .carousel-fade  .active.carousel-item-prev {
+    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+   }
+  
+  /* FEATURETTES
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.05rem;
+  }
+  
+  .featurette img {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+/* IMPORTS
+-------------------------------------------------- */
+
+// Required form Bootstrap
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/jumbotron";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/utilities";
+
