@@ -4,7 +4,6 @@ module.exports = {
     entry: {
         location: './src/js/location.js',
         menu: './src/js/menu.js',
-        contact: './src/js/contact.js'
     },
     output: {
         path: __dirname + '/dist',
@@ -33,7 +32,7 @@ module.exports = {
             title: 'Contact Us - The Little Den Coffee Shop',
             template: 'src/contact.html',
             filename: 'contact.html',
-            chunks: ['location', 'contact']
+            chunks: ['location']
         }),
     ],   
 };

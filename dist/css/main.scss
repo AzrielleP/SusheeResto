@@ -200,21 +200,19 @@ $navbar-dark-hover-color: $orange;
 ------------------------- */
 .menu-nav {
   display: block;
-  margin: auto;
+  margin: 1rem 0;
+  .active {
+    border-bottom: 2px solid $orange;
+  }
 }
 
 .btn-menu {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   margin: 0 1rem;
-  input {
-    display: none;
-  }
 }
 
-.btn-menu:focus,
-.btn-menu:active {
-  border-bottom: 2px solid $orange;
+.btn-menu:hover {
   color: $orange;
 }
 

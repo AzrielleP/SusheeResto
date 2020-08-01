@@ -1,5 +1,7 @@
 # Coffee Shop Restaurant Page
 
+**Restaurant Name:** **Little Den**
+
 See the live [here](https://azriellep.github.io/the-little-den/).
 
 ### What I Used To Build This Website

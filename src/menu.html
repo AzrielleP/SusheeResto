@@ -91,25 +91,24 @@
       <div class="container marketing">
 
         <hr class="img-separator" />
-
-          <div class="btn-group menu-nav" role = "group">
-              <button type="button" class="btn btn-menu active">Hot</button>
-           
-              <button type="button" class="btn btn-menu">Cold</button>
-            
-              <button type="button" class="btn btn-menu">Desert</button>
+        <div class="row justify-content-center">
+          <div class="btn-group menu-nav btn-group-toggle" data-toggle="buttons">
  
-              <!-- <label class="btn btn-menu active">
-                <input type="radio" name="options" id="option1" autocomplete="off"> Hot
+              <label class="btn btn-menu active">
+                <input type="radio" name="options" class = "menu-category" id="option1" autocomplete="off" value = "Hot" checked> Hot
               </label>
               <label class="btn btn-menu">
-                <input type="radio" name="options" id="option2" autocomplete="off"> Cold
+                <input type="radio" name="options" class = "menu-category" id="option2" autocomplete="off" value = "Cold"> Cold
               </label>
               <label class="btn btn-menu">
-                <input type="radio" name="options" id="option3" autocomplete="off"> Desert
-              </label> -->
+                <input type="radio" name="options" class = "menu-category" id="option3" autocomplete="off" value = "Desert"> Desert
+              </label>
           </div>
-        
+        </div>
+        <div class="row justify-content-center">
+          <p class = "small">Items in gray are our bestsellers.</p>
+        </div>
+        <div class="row">
         <div class="menu-container"></div>
       </div>
 
