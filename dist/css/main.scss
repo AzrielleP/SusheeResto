@@ -3,6 +3,7 @@ $lighter-dark: #403D39;
 $orange: #EB5E28;
 $lighter-white: #FFFCF2;
 $darker-white: #CCC5B9;
+
 /* TYPOGRAPHY
 -------------------------------------------------- */
 $font-family-base: "Montserrat", sans-serif;
@@ -12,7 +13,7 @@ $link-hover-decoration: none;
 
 $headings-font-family: "Merriweather", serif;
 $headings-font-weight: 700;
-$headings-margin-bottom: 2rem;
+$headings-margin-bottom: 1rem;
 $headings-color: $dark-color;
 $h1-font-size: 2.6rem;
 
@@ -31,6 +32,7 @@ $theme-colors:(
 );
 
 $btn-font-weight: 500;
+$btn-focus-box-shadow: none;
 
 .btn-lg {
   padding: 0.8rem 1rem !important;
@@ -39,8 +41,17 @@ $btn-font-weight: 500;
 
 /* NAVBAR
 -------------------------------------------------- */
-$border-width: 0;
+$border-width: 1px;
+$navbar-dark-color: $dark-color;
+$navbar-dark-hover-color: $orange;
 
+.navbar {
+  font: bolder 1.2rem "Merriweather", serif !important;
+}
+
+.nav-link:hover {
+  color: $orange !important;
+}
 
 /* CAROUSEL
 -------------------------------------------------- */
@@ -60,7 +71,7 @@ $border-width: 0;
     height: 100vh;
   }
   
-  .carousel-item:after {
+  .carousel-item:after{
     content: '';
     position: absolute;
     top: 0;
@@ -69,6 +80,7 @@ $border-width: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.5);
   }
+
   .carousel-item > img {
     position: absolute;
     top: 0;
@@ -112,6 +124,13 @@ $border-width: 0;
     background-color: #CCC5B9;
     height: 0.1px;
   }
+
+  // Divider for images
+  .img-separator {
+    margin: 2rem;
+    background-color: #CCC5B9;
+    height: 0.1px;
+  }
   
   /* Thin out the marketing headings */
   .featurette-heading {
@@ -123,6 +142,87 @@ $border-width: 0;
   .featurette img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+
+  /* JUMBOTRON
+  ------------------------- */
+  
+  .jumbotron {
+    position: relative;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: cover
+  }
+
+  // For Menu page
+  .menu-jumbotron {
+    background-image: url("../assets/slide-3-large.jpg"); 
+  }
+
+  // For About page
+  .about-jumbotron {
+    background-image: url("../assets/nafinia-putra-Kwdp-0pok-I-unsplash\ \(1\).jpg");
+  }
+
+  //For Contact Page
+  .contact-jumbotron {
+    background-image: url("../assets/glenn-carstens-peters-npxXWgQ33ZQ-unsplash\ \(1\).jpg")
+  }
+
+  .jumbotron-container {
+    position: relative;
+    height: 40vh;
+    color: $lighter-white;
+    .caption { 
+      position: absolute;
+    left: 50% !important;
+    top: 60% !important;
+    text-align: center;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    color: $lighter-white;
+    }
+  }
+
+   
+  .jumbotron > .overlay{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: inherit;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+
+  /* Style for menu items
+------------------------- */
+.menu-nav {
+  display: block;
+  margin: auto;
+}
+
+.btn-menu {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin: 0 1rem;
+  input {
+    display: none;
+  }
+}
+
+.btn-menu:focus,
+.btn-menu:active {
+  border-bottom: 2px solid $orange;
+  color: $orange;
+}
+
+.menu-container {
+  padding: 2rem;
+}
 
 /* Making the map visible in About Page
 ------------------------- */
@@ -145,7 +245,7 @@ footer {
     color: $lighter-white;
   }
   .fa-twitter, 
-  .fa-facebook {
+  .fa-facebook-square {
     font-size: 2em;
   }
   .fa-twitter:hover, 
@@ -169,6 +269,7 @@ footer {
 
 // Optional
 @import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/button-group";
 @import "../../node_modules/bootstrap/scss/carousel";
 @import "../../node_modules/bootstrap/scss/forms";
 @import "../../node_modules/bootstrap/scss/grid";

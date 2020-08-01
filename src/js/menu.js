@@ -29,12 +29,15 @@ const renderData = async (choice) => {
 
       const foodName = document.createElement('h4');
       foodName.textContent = dataToRender[i].name;
+      if (dataToRender[i].bestSeller) {
+        foodName.style.fontWeight = 'bold';
+      }
 
       const foodDescription = document.createElement('p');
       foodDescription.textContent = dataToRender[i].description;
 
       const foodPrice = document.createElement('h5');
-      foodPrice.textContent = `\u20B1 ${dataToRender[i].price}`;
+      foodPrice.textContent = `${dataToRender[i].price}`;
 
       subColSmall.appendChild(foodPrice);
       subCol.append(foodName, foodDescription);
@@ -48,6 +51,15 @@ const renderData = async (choice) => {
   }
 };
 
+// const checkTextContent = () => {
+//   const radioButton = document.querySelector('input[type="radio"]:checked');
+//   if (radioButton) {
+//     const textContent = radioButton.nextSibling.textContent;
+//     console.log(textContent);
+//     return textContent
+//   }
+// }
+
 const chooseMenu = () => {
   const menuNav = document.querySelector('.menu-nav');
 
@@ -59,6 +71,6 @@ const chooseMenu = () => {
   });
 };
 
-// Display Hot beverage after loading Menu
+//Display Hot beverage after loading Menu
 renderData('Hot');
 chooseMenu();
