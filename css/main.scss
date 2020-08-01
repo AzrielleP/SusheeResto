@@ -8,7 +8,7 @@ $link-hover-decoration: none;
 $headings-font-family: "Merriweather", serif;
 $headings-font-weight: 700;
 $headings-margin-bottom: 2rem;
-$h1-font-size: 2.8rem;
+$h1-font-size: 2.5rem;
 
 /* BUTTONS
 -------------------------------------------------- */
@@ -37,7 +37,7 @@ $border-width: 0;
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
-    bottom: 7rem !important;
+    bottom: 6rem !important;
     z-index: 10;
   }
   
