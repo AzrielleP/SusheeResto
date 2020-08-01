@@ -1,6 +1,6 @@
 const showLocation = () => {
-    // The Little Den coordinates
-   const coordinates = [120.61154, 16.411631];
+  // The Little Den coordinates
+  const coordinates = [120.61154, 16.411631];
   // Make a new map layer
   const map = new ol.Map({
     // Get the div with id = map from the html file
@@ -24,11 +24,13 @@ const showLocation = () => {
   });
 
   // Customize the marker's appearance
-  marker.setStyle(new ol.style.Style ({
-      image: new ol.style.Icon (({
-          src: 'assets/map-marker-alt-solid.svg'
-      }))
-  }));
+  marker.setStyle(
+    new ol.style.Style({
+      image: new ol.style.Icon({
+        src: 'assets/map-marker-alt-solid.svg',
+      }),
+    })
+  );
 
   const vectorSource = new ol.source.Vector({
     features: [marker],
@@ -39,7 +41,6 @@ const showLocation = () => {
   });
 
   map.addLayer(markerVectorLayer);
-  
 };
 
 showLocation();
